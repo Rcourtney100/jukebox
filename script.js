@@ -8,11 +8,15 @@
 var jukeBox = new Jukebox();
 var indie = new Song("Indie");
 var house = new Song("House");
+var protoVision = new Song("protoVision")
+var nightCall = new Song("nightCall")
 
 // var songList = [indie, house];
 
 jukeBox.addSong(indie)
+jukeBox.addSong(protoVision)
 jukeBox.addSong(house)
+jukeBox.addSong(nightCall)
 
 
 function Jukebox(){
@@ -20,6 +24,9 @@ function Jukebox(){
 		this.songList.push(song);
 	}
 	this.songList = [];
+	this.play = function playAudio(){
+		document.getElementsbyClassName(playlist)
+	}
 }		
 
 function Song(name){
